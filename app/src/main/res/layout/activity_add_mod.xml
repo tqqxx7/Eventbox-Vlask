@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".AddModActivity">
+
+    <include layout="@layout/toolbar_addmod" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/graylight4"
+        android:orientation="vertical"
+        android:padding="23dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_gray_border"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <EditText
+                android:id="@+id/EditTextInputMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:hint="@string/nhap_email"
+                android:background="@color/transferent"
+                android:inputType="text"
+                android:textColor="@color/graydark"
+                android:textColorHint="@color/graydark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/TextViewAddMod"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/them"
+                android:textColor="@color/bluelight"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25.8dp"
+        android:orientation="vertical"
+        android:background="#f5f5f5">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rc_list_mod">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img_loading_mod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_loading_list"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

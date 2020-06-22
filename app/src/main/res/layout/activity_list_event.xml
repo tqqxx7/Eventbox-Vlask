@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="25.3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/TextViewWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/sfpro_display_bold"
+                    android:text="T161552@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:text=""
+                    android:textColor="@color/graylight2"
+                    android:textSize="13.5sp" />
+
+                <TextView
+                    android:id="@+id/TextViewSignOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:text="Đăng xuất"
+                    android:textColor="#F1443D"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_logout"
+                    android:tint="#F1443D"/>
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                <!--android:text="@string/day_la_dong_demo"-->
+                <!--android:textColor="@color/bluedarkcode"-->
+                <!--android:textSize="13sp"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#f5f5f5">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img_loading_list"
+                        android:id="@+id/img_loading_list"
+                        android:visibility="visible"
+                        />
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/tv_no_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noevent"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:visibility="invisible"
+                        android:textColor="@color/blue2"
+                        android:layout_marginTop="25dp"
+                        android:id="@+id/tv_refesh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refesh"
+                        android:layout_gravity="center"/>
+                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/swipe_refresh_list_event">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:backgroundTint="#F9F9FB"
+                            android:id="@+id/rc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="25dp"
+                            android:layout_marginTop="17.3dp"
+                            android:background="@drawable/layout_bg"
+                            android:clipToPadding="false"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingTop="15dp"
+                            android:visibility="invisible"/>
+                    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

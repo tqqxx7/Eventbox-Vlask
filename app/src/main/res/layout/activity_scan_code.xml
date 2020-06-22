@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanCodeActivity"
+    android:background="@drawable/backgroundcode2">
+
+
+
+
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cameraPreview"
+        />
+
+    <include layout="@layout/toolbar_scan" />
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+
+    <TextView
+        android:id="@+id/TextViewTitleScanCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/scanmode"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+    <FrameLayout
+        android:id="@+id/FrameLayoutScan"
+        android:layout_width="600dp"
+        android:layout_height="500dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/ImageViewFrameScan"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/framecode15"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/FrameLayoutScan"
+            android:layout_alignTop="@+id/FrameLayoutScan">
+
+            <ImageView
+                android:id="@+id/ImageScanner"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/scanner_line" />
+
+
+            <ImageView
+                android:id="@+id/ImageViewFlash"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ImageScanner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/flash_off_icon" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Chạm để bật đèn Flash"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_below="@id/ImageViewFlash"/>-->
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/smokegray"
+        android:layout_above="@id/linear1"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:id="@+id/LayoutScanTicket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ImgScanTicket"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_ticket"
+                android:tint="@color/pinky"/>
+
+            <customfonts.MyRegulerText
+                android:id="@+id/TextViewScanTicket"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="@string/scan"
+                android:textColor="@color/pinky"/>
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="#bebfc0"/>
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:id="@+id/LayoutScanCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ImgScanCard"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_card"
+                android:tint="@color/black"
+                android:backgroundTint="@color/black"/>
+
+            <customfonts.MyRegulerText
+                android:id="@+id/TextViewScanCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="@string/scan_card" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="#bebfc0"/>
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:id="@+id/LayoutAddHandmade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ImgAddHand"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_hand"
+                android:tint="@color/white"/>
+
+            <customfonts.MyRegulerText
+                android:id="@+id/ImageAddHandmadeHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="@string/add_hand_made" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_above="@+id/linear2"-->
+        <!--android:background="#bebfc0"/>-->
+    <!--    <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/linear1"
+            android:background="#acacac"/>-->
+    <LinearLayout
+        android:layout_below="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="#bebfc0"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/linear1"
+   >
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--android:gravity="center">-->
+
+
+            <!--<customfonts.MyRegulerText-->
+                <!--android:id="@+id/myTextView_Helvatica_Light2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Est. Travel Time:"-->
+                <!--android:textColor="#adadae"-->
+                <!--android:textSize="10sp" />-->
+
+            <!--<customfonts.MyRegulerText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="11 mins"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="11sp" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
+
+
+            <!--<View-->
+                <!--android:layout_width="0.5dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="#bebfc0"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--&gt;-->
+
+            <!--<customfonts.MyRegulerText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="10sp"-->
+                <!--android:textColor="#adadae"-->
+                <!--android:text="Est. Travel Distance:"/>-->
+
+            <!--<customfonts.MyRegulerText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="11sp"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="7.5 km"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_above="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_above="@+id/space"
+       >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_vlu"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp">
+
+
+                <customfonts.MyRegulerText
+                    android:id="@+id/TextViewNameAcoount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chuaco"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp">
+
+
+                <customfonts.MyRegulerText
+                    android:id="@+id/myTextView_Helvatica_Light9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#adadae"
+                    android:text="Khoa:" />
+
+                <customfonts.MyRegulerText
+                    android:id="@+id/TextViewFaculty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="@string/chuaco"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+
+
+                <customfonts.MyRegulerText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#adadae"
+                    android:text="Trạng thái: "/>
+
+                <customfonts.MyRegulerText
+                    android:id="@+id/TextViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/green"
+                    android:text="@string/chuaco" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView2"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/ic_profile" />-->
+
+            <!--<customfonts.MyRegulerText-->
+                <!--android:id="@+id/myTextView_Helvatica_Light10"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:textSize="11sp"-->
+                <!--android:text="Sedan"-->
+                <!--android:textColor="@color/black" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="35dp"-->
+        <!--android:background="@drawable/rect_pink_cornor1"-->
+        <!--android:fontFamily="@font/sfpro_display_bold"-->
+        <!--android:paddingLeft="65dp"-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:paddingRight="65dp"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:text="Check-in"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="13.3sp"-->
+        <!--android:id="@+id/ButtonCheckIn"/>-->
+
+    <!--<SurfaceView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="320dp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginRight="60dp"-->
+        <!--android:id="@+id/cameraPreview"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="TRUONG QUOC QUAN"-->
+        <!--android:textSize="25sp"-->
+        <!--android:id="@+id/TextViewResult"-->
+        <!--android:layout_below="@+id/cameraPreview"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+
+
+</RelativeLayout>

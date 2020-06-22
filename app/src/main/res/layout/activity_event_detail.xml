@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21.7dp"
+                        android:layout_marginRight="21.3dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15.3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/done" />
+
+                            <TextView
+                                android:id="@+id/TextViewTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/sfpro_display_bold"
+                                android:text="TalkShow AI - Blockchain"
+                                android:textColor="@color/black"
+                                android:textSize="16.7sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TextViewFaculty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="1.5dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Khoa Công nghệ thông tin"
+                            android:textColor="@color/black"
+                            android:textSize="11.7sp" />
+
+
+
+
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="30dp"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:background="@drawable/dotted_line_rect_light_green"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:padding="8dp">-->
+
+
+                            <!--<ImageView-->
+                                <!--android:layout_width="25dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:src="@drawable/payathotel" />-->
+
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:layout_marginLeft="11dp"-->
+                                <!--android:layout_marginRight="15dp"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:fontFamily="@font/sfuitext_semibold"-->
+                                <!--android:text=""-->
+                                <!--android:textColor="@color/blacklight"-->
+                                <!--android:textSize="12.7sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_gravity="center"-->
+                                <!--android:fontFamily="@font/sfpro_display_bold"-->
+                                <!--android:text=""-->
+                                <!--android:textColor="@color/blacklight"-->
+                                <!--android:textSize="11.7sp" />-->
+                        <!--</LinearLayout>-->
+
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="30.5dp"
+                        android:background="@color/smokegray" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21.7dp"
+                        android:layout_marginRight="21.3dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35.3dp"
+                            android:fontFamily="@font/sfuitext_semibold"
+                            android:text="@string/thong_tin_chi_tiet"
+                            android:textColor="@color/blacklight"
+                            android:textSize="13sp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15.5dp"
+                            android:background="@color/graylight" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="Bắt đầu:"
+                                android:textColor="@color/graydark"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/TextViewStartDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="08:00 | 20/11/2019"
+                                android:textColor="@color/blacklight"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15.5dp"
+                            android:background="@color/graylight" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="Kết thúc:"
+                                android:textColor="@color/graydark"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/TextViewEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="11:00 | 20/11/2019"
+                                android:textColor="@color/blacklight"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15.5dp"
+                            android:background="@color/graylight" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="Địa điểm:"
+                                android:textColor="@color/graydark"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/TextViewAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="Hoi truong Trinh Cong Son"
+                                android:textColor="@color/blacklight"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="30.5dp"
+                        android:background="@color/smokegray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="20dp"
+                        android:id="@+id/Layout_Addmod">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/qr" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16.4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sfuitext_semibold"
+                                android:text="THÊM NGƯỜI CHECK-IN"
+                                android:textColor="@color/blacklight"
+                                android:textSize="12.7sp" />
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                                <!--android:text="Le Van A, Nguyen Van C, Tran Thi B."-->
+                                <!--android:textColor="@color/graydark"-->
+                                <!--android:textSize="11.7sp" />-->
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/play_button" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@color/smokegray" />
+
+                    <ImageView
+                        android:id="@+id/ImageViewRefeshTicket"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="right"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_refesh"
+                       />
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:padding="20dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/mapview" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="16.4dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:fontFamily="@font/sfuitext_semibold"-->
+                                <!--android:text="view_on_map"-->
+                                <!--android:textColor="@color/blacklight"-->
+                                <!--android:textSize="14sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                                <!--android:text="click_here_to_get_navigation_to_the_hotel"-->
+                                <!--android:textColor="@color/graydark"-->
+                                <!--android:textSize="11.7sp" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/play_button" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="60dp"-->
+                        <!--android:fontFamily="@font/sfpro_display_bold"-->
+                        <!--android:text="address"-->
+                        <!--android:textColor="@color/blacklight"-->
+                        <!--android:textSize="12.7sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="60dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_marginRight="16dp"-->
+                        <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                        <!--android:text="_7_jetalpur_rd_sampatrao_colony_alkapuri_vadodara_ngujarat_390020"-->
+                        <!--android:textColor="@color/graydark"-->
+                        <!--android:textSize="12sp" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="15dp"-->
+                        <!--android:layout_marginTop="18.5dp"-->
+                        <!--android:background="@color/graylight" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="27.2dp"-->
+                        <!--android:layout_marginTop="22.3dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/nearbyplace" />-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="20dp"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:fontFamily="@font/sfpro_display_semibold"-->
+                                <!--android:text="near_by"-->
+                                <!--android:textColor="@color/blacklight"-->
+                                <!--android:textSize="12.7sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                                <!--android:text="places_near_your_hotel_and_some_helpful_places"-->
+                                <!--android:textColor="@color/graydark"-->
+                                <!--android:textSize="11.7sp" />-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14.8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ticket_icon"
+                                android:tint="@color/icon_color"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                                android:text="@string/tong_ve"
+                                android:textColor="@color/black"
+                                android:textSize="13.3sp" />
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/TextViewSumTicket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="@string/loading"
+                                android:textColor="@color/darkblue"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="21.8dp"
+                            android:background="@color/graylight" />
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/success_icon"
+                                android:tint="@color/icon_color"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                                android:text="@string/da_co_mat"
+                                android:textColor="@color/black"
+                                android:textSize="13.3sp" />
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/TextViewTotalCheckin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="@string/loading"
+                                android:textColor="@color/darkblue"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/graylight" />
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/x_icon"
+                                android:tint="@color/icon_color"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/sfpro_display_semibold"
+                                android:text="@string/chua_check_in"
+                                android:textColor="@color/black"
+                                android:textSize="13.3sp" />
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:id="@+id/TextViewMissEvent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/sf_pro_display_medium"
+                                android:text="@string/loading"
+                                android:textColor="@color/darkblue"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rect_blue_cornor1"
+                        android:fontFamily="@font/sfpro_display_bold"
+                        android:paddingLeft="65dp"
+                        android:paddingRight="65dp"
+                        android:text="Check-in"
+                        android:textColor="@color/white"
+                        android:textSize="13.3sp"
+                        android:id="@+id/ButtonCheckIn"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

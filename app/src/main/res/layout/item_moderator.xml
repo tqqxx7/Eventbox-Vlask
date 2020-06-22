@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:elevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <RelativeLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_vlu"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_name_mod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truong Quoc Quan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:maxLines="2"
+                android:id="@+id/tv_email_mod"
+                android:layout_below="@+id/tv_name_mod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="t161552@gmail.com"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

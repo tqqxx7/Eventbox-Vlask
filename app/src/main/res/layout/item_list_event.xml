@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:backgroundTint="#F9F9FB">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutItemEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img1" />
+
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="Talk show AI - Blockchain"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TextViewDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8.3dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="Những câu chuyện về Trí tuệ nhân tạo (AI), Blockchain, Khởi nghiệp công nghệ và các bài học kinh nghiệm dành cho sinh viên” được tổ chức tại VLU từ 14:00-17:00, ngày 1/11/2019"
+                android:textColor="@color/graylight1"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@color/lightgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="19.5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_start" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Ngày bắt đầu"
+                            android:layout_gravity="center"
+                            android:textColor="@color/blue"
+                            android:textSize="11.7sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TextViewStartDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2.5dp"
+                        android:fontFamily="@font/sfpro_display_bold"
+                        android:text="_1999"
+                        android:textColor="@color/black"
+                        android:textSize="12.3sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_end" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Ngày kết thúc"
+                            android:layout_gravity="center"
+                            android:textColor="@color/blue"
+                            android:textSize="11.7sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TextViewEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/sfpro_display_bold"
+                        android:text="_2100"
+                        android:textColor="@color/black"
+                        android:textSize="12.sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="16.3dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_ticket"
+                            android:tint="@color/yellow"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Số vé"
+                            android:textColor="@color/blue"
+                            android:textSize="11.7sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/TextViewTicket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/sfpro_display_bold"
+                        android:text="_2300"
+                        android:textColor="@color/black"
+                        android:textSize="12.3sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

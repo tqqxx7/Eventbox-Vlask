@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Event Box</string>
+
+    <string name="hello_world">
+        <font fgcolor="#000000">TAVEL</font><font fgcolor="#13c7ac">U</font><font fgcolor="#000000">M</font>
+    </string>
+
+    <string name="abc">
+        <font fgcolor="#000000">Know this place?</font><font fgcolor="#2d5da1">Answer quick questions</font>
+    </string>
+    <string name="rushabh_patel">Rushabh Patel</string>
+    <string name="day_la_dong_demo">demo</string>
+    <string name="thong_tin_chi_tiet">Thông tin chi tiết</string>
+    <string name="tong_ve">Tổng vé</string>
+    <string name="da_co_mat">Đã check-in</string>
+    <string name="chua_check_in">Chưa check-in</string>
+    <string name="nhap_email">Nhập email</string>
+    <string name="them">THÊM</string>
+    <string name="faillogin">Sai tài khoản hoặc mật khẩu</string>
+    <string name="noevent">Không có sự kiện nào</string>
+    <string name="refesh">Thử lại</string>
+    <string name="pleasefillout">Vui lòng điền đầy đủ thông tin</string>
+    <string name="chuaco">Chưa có</string>
+    <string name="addmoderator">Đang thêm Moderator...</string>
+    <string name="loading">Đang cập nhập</string>
+    <string name="pleasefillemail">Vui lòng nhập Email</string>
+    <string name="scan_success_message">Check-in thành công!</string>
+    <string name="success_checkin">Điểm danh thành công!</string>
+    <string name="ok">OK</string>
+    <string name="scan_code_1">Vé đã điểm danh rồi!</string>
+    <string name="scan_code_2">Vé không hợp lệ!</string>
+    <string name="add_hand_made">Thêm thủ công</string>
+    <string name="scan_card">Quét thẻ</string>
+    <string name="scan">Quét vé</string>
+    <string name="scanmode">Chế độ quét vé</string>
+    <string name="scan_card_mode">Chế độ quét thẻ</string>
+    <string name="mess_fail_card">Thẻ đã quét rồi!</string>
+
+</resources>
